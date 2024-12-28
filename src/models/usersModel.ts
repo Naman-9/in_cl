@@ -35,6 +35,7 @@ const UserSchema: Schema<IUser> = new Schema(
     password: {
       type: String,
       required: [true, 'Please provide password.'],
+      select: false,
     },
     profilePicture: {
       type: String,
